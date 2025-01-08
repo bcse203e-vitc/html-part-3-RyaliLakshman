@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .keynote {
+            background-color: #c3e6cb; /* Light green for keynotes */
+        }
+        .workshop {
+            background-color: #d4e8f2; /* Light blue for workshops */
+        }
+        .panel {
+            background-color: #f9e1c8; /* Light orange for panel discussions */
+        }
+        .legend {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .legend span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conference Timetable</h1>
+    <table>
+        <caption><strong>Annual Tech Conference 2025</strong></caption>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Room A</th>
+                <th>Room B</th>
+                <th>Room C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Morning Keynote -->
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td colspan="3" class="keynote" title="Speaker: Dr. Alice Johnson - Innovations in AI">
+                    Opening Keynote: Innovations in AI
+                </td>
+            </tr>
+            <!-- Morning Session -->
+            <tr>
+                <td>10:15 - 11:15</td>
+                <td class="workshop" title="Speaker: John Smith - Hands-on coding with Python">
+                    Workshop: Python Coding
+                </td>
+                <td class="panel" title="Panel Discussion: Future of Technology with industry leaders">
+                    Panel: Future of Technology
+                </td>
+                <td class="workshop" title="Speaker: Sarah Brown - UX Design Essentials">
+                    Workshop: UX Design
+                </td>
+            </tr>
+            <!-- Coffee Break -->
+            <tr>
+                <td>11:15 - 11:45</td>
+                <td colspan="3" title="Networking and refreshments">Coffee Break</td>
+            </tr>
+            <!-- Midday Session -->
+            <tr>
+                <td>11:45 - 12:45</td>
+                <td class="panel" title="Panel Discussion: Green Tech and Sustainability">
+                    Panel: Green Tech
+                </td>
+                <td class="workshop" title="Speaker: Emily Green - Data Science Tools">
+                    Workshop: Data Science
+                </td>
+                <td rowspan="2" class="workshop" title="Speaker: Dr. Kevin Lee - Full-stack Development">
+                    Workshop: Full-stack Development
+                </td>
+            </tr>
+            <!-- Lunch Break -->
+            <tr>
+                <td>12:45 - 13:45</td>
+                <td colspan="2" title="Buffet lunch in the main hall">Lunch Break</td>
+            </tr>
+            <!-- Afternoon Session -->
+            <tr>
+                <td>13:45 - 14:45</td>
+                <td class="workshop" title="Speaker: David Lee - Intro to Blockchain">
+                    Workshop: Blockchain
+                </td>
+                <td class="keynote" title="Speaker: Dr. Laura White - AI and Ethics">
+                    Keynote: AI and Ethics
+                </td>
+                <td class="workshop" title="Speaker: Kevin White - Full-stack Development (Continued)">
+                    Workshop: Full-stack Development
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Legend -->
+    <div class="legend">
+        <h3>Legend</h3>
+        <p>
+            <span style="background-color: #c3e6cb;"></span> Keynote <br>
+            <span style="background-color: #d4e8f2;"></span> Workshop <br>
+            <span style="background-color: #f9e1c8;"></span> Panel Discussion
+        </p>
+    </div>
+</body>
+</html>
