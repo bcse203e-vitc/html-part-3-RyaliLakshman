@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .vegetarian {
+            color: green;
+            font-weight: bold;
+        }
+        .rating {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <table>
+        <caption><strong>Menu</strong></caption>
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th>Customer Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Appetizer -->
+            <tr>
+                <td>Spring Rolls <span class="vegetarian">🌱</span></td>
+                <td>Appetizer</td>
+                <td rowspan="2">Cabbage, Carrot, Rice Paper</td>
+                <td>$5.99</td>
+                <td class="rating">★★★★☆</td>
+            </tr>
+            <tr>
+                <td>Vegetable Dumplings <span class="vegetarian">🌱</span></td>
+                <td>Appetizer</td>
+                <td>$6.99</td>
+                <td class="rating">★★★★★</td>
+            </tr>
+            <!-- Main Course -->
+            <tr>
+                <td>Grilled Chicken</td>
+                <td>Main Course</td>
+                <td rowspan="2">Chicken, Spices, Lemon</td>
+                <td>$12.99</td>
+                <td class="rating">★★★★☆</td>
+            </tr>
+            <tr>
+                <td>Lemon Herb Salmon</td>
+                <td>Main Course</td>
+                <td>$15.99</td>
+                <td class="rating">★★★★☆</td>
+            </tr>
+            <!-- Dessert -->
+            <tr>
+                <td>Chocolate Lava Cake</td>
+                <td>Dessert</td>
+                <td>Chocolate, Butter, Sugar</td>
+                <td>$7.99</td>
+                <td class="rating">★★★★★</td>
+            </tr>
+            <tr>
+                <td>Fruit Salad <span class="vegetarian">🌱</span></td>
+                <td>Dessert</td>
+                <td>Mixed Fruits, Honey</td>
+                <td>$6.50</td>
+                <td class="rating">★★★☆☆</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

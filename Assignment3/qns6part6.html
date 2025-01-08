@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .highest-region {
+            background-color: #c3e6cb; /* Highlight for highest sales regions */
+            font-weight: bold;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Sales Report</h1>
+    <table>
+        <caption><strong>Sales Report for 2024</strong></caption>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Salesperson</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Unit Price</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Region 1 -->
+            <tr class="highest-region">
+                <td rowspan="2">North</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>200</td>
+                <td>$500</td>
+                <td>$100,000</td>
+            </tr>
+            <tr class="highest-region">
+                <td>Jane Smith</td>
+                <td>Tablet</td>
+                <td>150</td>
+                <td>$300</td>
+                <td>$45,000</td>
+            </tr>
+            <!-- Region 2 -->
+            <tr>
+                <td rowspan="2">South</td>
+                <td>Michael Lee</td>
+                <td>Laptop</td>
+                <td>50</td>
+                <td>$1,000</td>
+                <td>$50,000</td>
+            </tr>
+            <tr>
+                <td>Sarah Brown</td>
+                <td>Desktop</td>
+                <td>30</td>
+                <td>$800</td>
+                <td>$24,000</td>
+            </tr>
+            <!-- Region 3 -->
+            <tr>
+                <td>East</td>
+                <td>David Green</td>
+                <td>Monitor</td>
+                <td>70</td>
+                <td>$200</td>
+                <td>$14,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Grand Total</td>
+                <td>$233,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
