@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Report Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .top-student {
+            background-color: #c3e6cb; /* Highlight for top students */
+            font-weight: bold;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grade Report for Class</h1>
+    <table>
+        <caption><strong>Class Grade Report</strong></caption>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Top Student -->
+            <tr class="top-student">
+                <td>101</td>
+                <td>John Doe</td>
+                <td>95</td>
+                <td>90</td>
+                <td>88</td>
+                <td rowspan="2">273</td>
+            </tr>
+            <tr class="top-student">
+                <td>102</td>
+                <td>Jane Smith</td>
+                <td>93</td>
+                <td>92</td>
+                <td>88</td>
+            </tr>
+            <!-- Second Place -->
+            <tr>
+                <td>103</td>
+                <td>Michael Lee</td>
+                <td>90</td>
+                <td>88</td>
+                <td>85</td>
+                <td>263</td>
+            </tr>
+            <!-- Third Place -->
+            <tr>
+                <td>104</td>
+                <td>Sarah Brown</td>
+                <td>88</td>
+                <td>85</td>
+                <td>87</td>
+                <td>260</td>
+            </tr>
+            <!-- Other Students -->
+            <tr>
+                <td>105</td>
+                <td>David Green</td>
+                <td>80</td>
+                <td>82</td>
+                <td>79</td>
+                <td>241</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Class Average</td>
+                <td>89</td>
+                <td>87</td>
+                <td>85</td>
+                <td>-</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
